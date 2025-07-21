@@ -1,0 +1,235 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+}
+section{
+    margin: 100px 0;
+}
+.title {
+  margin: 50px 0;
+  font-size: 40px;
+  text-align: center;
+}
+h3 , h2{
+  padding: 20px 0;
+}
+.container {
+  width: 1300px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.col-4 {
+  width: calc(100% / 3 - 20px);
+}
+.col-3 {
+  width: calc(100% / 4 - 30px);
+}
+.col-6 {
+  width: calc(100% / 2 - 15px);
+}
+i{
+    font-size: 22px;
+}
+
+.col-4 .card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card-overlay{
+    left: 0;
+    top: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.468);
+}
+
+.col-4 .card:hover{
+    background-color: rgba(0, 0, 255, 0.518);
+    color: #fff;
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+.col-4 .card .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blueviolet;
+  background-color: rgba(200, 200, 200, 0.253);
+}
+
+.web-solution {
+  margin-top: 150px;
+}
+.web-solution .group-list-courses {
+  margin-top: 40px;
+}
+.group-list-courses .row .col-6 {
+  position: relative;
+  overflow: hidden;
+  width: calc(100% / 2 - 15px);
+}
+.group-list-courses .row .col-6 .list-courses.active {
+  background-color: rgb(173, 36, 211);
+  color: #fff;
+}
+.group-list-courses .list-courses {
+    position: relative;
+    overflow: hidden;
+  transition: 0.5s;
+  border-left: 2px solid plum;
+  border-radius: 0 0 7px 0;
+  padding: 15px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.group-list-courses .list-courses .list-courses-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 36, 211, 0.685);
+    top: 0;
+    left: -100%;
+}
+.group-list-courses .list-courses:hover .list-courses-overlay{
+    left: 0;
+    transition: 0.5s;
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-card{
+    text-align: center;
+    color: #fff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(137, 75, 229, 0.485);
+}
+
+.services {
+    height: 300px;
+    margin-bottom: 20px;
+    background-image: url('../images/total-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-rang{
+    font-size: 40px;
+}
+
+.portfolio{
+  text-align: center;
+  margin: auto;
+}
+.portfolio .portfolio-tittle span{
+  color: blue;
+}
+
+.portfolio .categories .categories-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .categories{
+    margin: 50px 0;
+}
+
+.categories-nav .nav-item .nav-link{
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(173, 216, 230, 0.581);
+}
+.categories-nav .nav-item .nav-link:hover{
+    background-color: blue;
+    color: #fff;
+}
+.categories-nav .nav-item .nav-link.active{
+    color: #fff;
+    background-color: blue;
+}
+
+.portfolio .all-work{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.portfolio .all-work .col-4 .card {
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 1s;
+}
+
+.portfolio .all-work .col-4 .card:hover .card-content{
+    opacity: 1;
+}
+.portfolio .all-work .col-4 .card:hover{
+    transform: scale(1.05);
+}
+
+.all-work .card .card-content{
+    line-height: 18px;
+    padding: 20px;
+    text-align: start;
+    color: #fff;
+    position: absolute;    
+    bottom: 50px;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    transition: .5s;
+    opacity: 0;
+    background-color: blue;
+}
+.all-work .card-content .group-icon span{ 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.all-work .group-icon span i{
+    font-size: 20px;
+    color: blue;
+    padding: 10px;
+}
